@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 229, 236);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, .6), -9px -9px 16px rgba(255, 255, 255, .5);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: all 1.5s linear;
+}
+
+.fas {
+    font-size: 60px;
+}
+
+.fa-heart {
+    color: #f00;
+    transition: all 1.5s linear;
+}
+
+.fa-eur,
+.fa-usd {
+    color: rgb(4, 138, 161);
+    transition: all 1.5s linear;
+}
+
+.box:hover {
+    box-shadow: inset 9px 9px 16px rgba(163, 177, 198, .6), inset -9px -9px 16px rgba(255, 255, 255, .5);
+}
+
+.box:hover i {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, .6), -9px -9px 16px rgba(255, 255, 255, .5);
+}
